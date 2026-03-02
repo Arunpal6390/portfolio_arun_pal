@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arun Pal | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Arun Pal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero d-flex align-items-center text-center">
+    <div class="container">
+        <h1 class="display-4">Hi, I'm Arun Pal</h1>
+        <p class="lead">MCA Student | Web Developer | React Learner</p>
+        <a href="#projects" class="btn btn-primary mt-3">View My Work</a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <p class="text-center">
+            I am an MCA student passionate about web development. 
+            I build responsive and user-friendly web applications using 
+            HTML, CSS, JavaScript, Bootstrap and React.
+        </p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-3"><div class="skill-box">HTML5</div></div>
+            <div class="col-md-3"><div class="skill-box">CSS3</div></div>
+            <div class="col-md-3"><div class="skill-box">JavaScript</div></div>
+            <div class="col-md-3"><div class="skill-box">Bootstrap</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce Website</h5>
+                        <p class="card-text">Responsive online store using HTML, CSS & JS.</p>
+                        <button class="btn btn-outline-primary" onclick="showAlert()">View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Website</h5>
+                        <p class="card-text">Modern blog UI built with Bootstrap.</p>
+                        <button class="btn btn-outline-primary" onclick="showAlert()">View Project</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-dark text-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+
+        <form id="contactForm" class="col-md-6 mx-auto">
+            
+            <input 
+                type="text" 
+                id="name"
+                name="name"
+                class="form-control mb-3" 
+                placeholder="Your Name" 
+                required>
+
+            <input 
+                type="email" 
+                id="email"
+                name="email"
+                class="form-control mb-3" 
+                placeholder="Your Email" 
+                required>
+
+            <textarea 
+                id="message"
+                name="message"
+                class="form-control mb-3" 
+                rows="4" 
+                placeholder="Your Message" 
+                required></textarea>
+            <input type="hidden" name="time" id="timeField">
+            <button type="submit" class="btn btn-primary w-100">
+                Send Message
+            </button>
+
+        </form>
+
+        <p class="text-center mt-3" id="formMessage"></p>
+    </div>
+</section>
+
+<footer class="text-center py-3 bg-secondary text-white">
+    © 2026 Arun Pal | All Rights Reserved
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
