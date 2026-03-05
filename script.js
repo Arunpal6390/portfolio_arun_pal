@@ -1,6 +1,6 @@
 // EmailJS Initialize
 (function () {
-    emailjs.init("xXCWRQ0XCSvy2YFTl"); // yaha apna Public Key daalo
+    emailjs.init("xXCWRQ0XCSvy2YFTl"); //public id
 })();
 
 // Form Submit Event
